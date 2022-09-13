@@ -146,8 +146,16 @@ You can type the name of a color then press either of the buttons on the MiniPiT
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ cat screen_test.py
 ```
 
+Below is a short recording of testing the `screen_test.py` where I input a color (red) and use the button to initiate color display on the raspberry pi:
+
+![color scrren test display](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/screen_test_color.mov)
+
 #### Displaying Info with Texts
 You can look in `stats.py` for how to display text on the screen!
+
+Below is an image of the raspberry pi display running the `stats.py` and simply adding a text to test text screen modification:
+
+![stats_test_display](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/stats_test.png)
 
 #### Displaying an image
 
@@ -176,18 +184,17 @@ Option 2. Another way for you to edit scripts is to use VNC on your laptop to re
 Now you should be able to edit python scripts with Thonny on your Pi.
 
 
-
 ## Part E.
 ### Modify the barebones clock to make it your own
 
-Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
-
-Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
-
+Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY) Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
 Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
 
-**We strongly discourage and will reject the results of literal digital or analog clock display.**
+For my Clock of Pi project, I wanted to think about different ways to measure time as well as focus the brainstorming on 1)the different modes of input/output and 2)the interactions. Some ideas of input began with thinking about the various devices we could connect to the rasberry pi, such as the webcam, joystick, and buttons and outputs mainly through the screen, but varied from text to color. In terms of the interaction, I thought about passive vs. active interactions when thinking about the input a person could give (i.e. passive as in sitting in front of a webcam for "inputting" image for object dection vs. active as in pressing a button when the person is "inputting" data for time measurement, such as pressing the button everytime they drink water). 
 
+Ultimately, I wanted to build a "Time to Stretch Clock" that would sit on a desk and measure how long someone has been standing in front of desk. Based on object dectection of a person using a webcam and the opencv library, the clock would show varied texts depending on how long the person has been in front of the desk clock, such as "Time to stretch" when the person has been at the desk for 45-50 consecutive minutes or "Time for a walk!" when the persons cumulative time at their desk has been 4+ hours. I was not able to implement this idea yet for Lab 2i. Below is a sketch of my idea concept brainstorming:
+
+![brainstorming_sketch](https://github.com/hjkim63/Interactive-Lab-Hub/blob/b05afc90cd7091da67808edf5f877743761f5992/Lab%202/clock_brainstorming_sketch.png)
 
 \*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
 
@@ -201,11 +208,18 @@ After you edit and work on the scripts for Lab 2, the files should be upload bac
 
 After that, Git will ask you to login to your GitHub account to push the updates online, you will be asked to provide your GitHub user name and password. Remember to use the "Personal Access Tokens" you set up in Part A as the password instead of your account one! Go on your GitHub repo with your laptop, you should be able to see the updated files from your Pi!
 
+To start with, I simply experimented using the buttons to display the current time:
+
+
+![simple clock display](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/simple_clock_display.png)
+
 
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
 \*\*\***Take a video of your PiClock.**\*\*\*
+
+
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
