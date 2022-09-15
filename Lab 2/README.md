@@ -228,9 +228,22 @@ To start with, I simply experimented using the buttons to display the current ti
 # Prep for Part 2
 
 1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
+
+_Picked up missing parts: Red LED light
   
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
+
+###Feedback from Michael Kelleher, Sidarth Wadhwa*
+Positives
+- Thinking about differentiated added value from alternative devices: While there are other wearable devices, like the Apple Watch, that has similar functionalities, this device would still provide some functionality without having to wear the device the entire day.
+
+Some design considereations:
+- Edge cases & counting "sitting down time":
+- Notification process: would the user be notifed using sound, display (color display or image display, text display) or other sensory alarms (vibration)? Would the user still be notifed when they are during a meeting or in a super productive work flow? What is the range of activities to take a break --stretching, walk? 
+- Turning off the alarm: how does the user ignore or snooze the alarm?
+- Privacy: How does the user feel about having a camera on the entire time? Where is the object detection being done?
+
 
 # Lab 2 Part 2
 
