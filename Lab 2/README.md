@@ -234,7 +234,8 @@ _Picked up missing parts: Red LED light
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
 
-###Feedback from Michael Kelleher, Sidarth Wadhwa*
+### Feedback from Michael Kelleher, Sidarth Wadhwa
+
 Positives
 - Thinking about differentiated added value from alternative devices: While there are other wearable devices, like the Apple Watch, that has similar functionalities, this device would still provide some functionality without having to wear the device the entire day.
 
