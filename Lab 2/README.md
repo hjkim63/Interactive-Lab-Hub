@@ -138,7 +138,8 @@ The display uses a communication protocol called [SPI](https://www.circuitbasics
 
 We can test it by typing 
 ```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ python screen_test.py
+(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ python 
+.py
 ```
 
 You can type the name of a color then press either of the buttons on the MiniPiTFT to see what happens on the display! You can press `ctrl-c` to exit the script. Take a look at the code with
@@ -220,16 +221,18 @@ To start with, I simply experimented using the buttons to display the current ti
 \*\*\***Take a video of your PiClock.**\*\*\*
 
 
-
 ## Part G. 
-## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+## Below are sketches of storboards to better understand the context of the device and the user's interactions as well as additional features to build out (either within or beyond this lab).
 
+![storyboard_brainstorm_a](https://github.com/hjkim63/Interactive-Lab-Hub/blob/93fba073ec64c11d02469ea91644b78b45ce32c3/Lab%202/storyboard_A.jpg)
+
+![storyboard_brainstorm_b](https://github.com/hjkim63/Interactive-Lab-Hub/blob/93fba073ec64c11d02469ea91644b78b45ce32c3/Lab%202/storyboard_b.jpg)
 
 # Prep for Part 2
 
 1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
 
-_Picked up missing parts: Red LED light
+Picked up missing parts: Red LED light
   
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
@@ -241,21 +244,27 @@ Positives
 
 Some design considereations:
 - Edge cases & counting "sitting down time":
+- Privacy: How does the user feel about having a camera on the entire time? Where is the object detection being done?
 - Notification process: would the user be notifed using sound, display (color display or image display, text display) or other sensory alarms (vibration)? Would the user still be notifed when they are during a meeting or in a super productive work flow? What is the range of activities to take a break --stretching, walk? 
 - Turning off the alarm: how does the user ignore or snooze the alarm?
-- Privacy: How does the user feel about having a camera on the entire time? Where is the object detection being done?
 
 
 # Lab 2 Part 2
 
-Pull Interactive Lab Hub updates to your repo.
+The updated code for Lab 2 Part 2 (`lab2i.py`) is located in the Lab 2 repo.
 
-Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
+<!-- Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required. -->
 
+Taking the input from peers and revisiting previous brainstorming sessions, I made the following changes to the interaction and system design: 
+- Instead of using a webcam to be constantly running in the background, leading to heavy computation loads and user privacy concerns ("user might feel uncomfortable and monitored with a webcam constantly running") 
+- Provide options to snooze the stretch reminder, in case the user is during a remote meeting or lecture. A next step or additional feature for this functionality could be to connect the device to the user's digital calenda (Google Calendar API) to automatically snooze or only give a "gentle nudge" during busy, occupied meeting times. 
+- Going beyond simple text displays, using different images to provide users with possible ideas for stretching and additional movement. 
+
+Below is a product introduction and demo video:
 ![product_intro_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/63c6b226137032fe824c7dd5e8009d43031ae5e5/Lab%202/demo.mp4)
 
-As always, make sure you document contributions and ideas from others explicitly in your writeup.
+<!-- As always, make sure you document contributions and ideas from others explicitly in your writeup. -->
 
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+<!-- You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page.  -->
 
 
