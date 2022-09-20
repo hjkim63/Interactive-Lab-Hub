@@ -260,9 +260,10 @@ Taking the input from peers and revisiting previous brainstorming sessions, I ma
 - Provide options to snooze the stretch reminder, in case the user is during a remote meeting or lecture. A next step or additional feature for this functionality could be to connect the device to the user's digital calenda (Google Calendar API) to automatically snooze or only give a "gentle nudge" during busy, occupied meeting times. 
 - Going beyond simple text displays, using different images to provide users with possible ideas for stretching and additional movement. 
 
-Below is a product introduction and demo video:
+Below is a product introduction and demo video (and screenshots from the demo video):
 ![product_intro_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/63c6b226137032fe824c7dd5e8009d43031ae5e5/Lab%202/demo.mp4)
 
+![demo_screenshots](https://github.com/hjkim63/Interactive-Lab-Hub/blob/35ab06f027b625ddedb4ba980e356122d22fcc01/Lab%202/demo_screenshots.png)
 <!-- As always, make sure you document contributions and ideas from others explicitly in your writeup. -->
 
 <!-- You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page.  -->
