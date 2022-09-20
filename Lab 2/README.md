@@ -209,16 +209,16 @@ After you edit and work on the scripts for Lab 2, the files should be upload bac
 
 After that, Git will ask you to login to your GitHub account to push the updates online, you will be asked to provide your GitHub user name and password. Remember to use the "Personal Access Tokens" you set up in Part A as the password instead of your account one! Go on your GitHub repo with your laptop, you should be able to see the updated files from your Pi!
 
+
+
+## Part F. 
 To start with, I simply experimented using the buttons to display the current time:
 
 
 ![simple clock display](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/simple_clock_display.png)
+<!-- ## Make a short video of your modified barebones PiClock -->
 
-
-## Part F. 
-## Make a short video of your modified barebones PiClock
-
-\*\*\***Take a video of your PiClock.**\*\*\*
+<!-- \*\*\***Take a video of your PiClock.**\*\*\* -->
 
 
 ## Part G. 
@@ -256,11 +256,13 @@ The updated code for Lab 2 Part 2 (`lab2i.py`) is located in the Lab 2 repo.
 <!-- Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required. -->
 
 Taking the input from peers and revisiting previous brainstorming sessions, I made the following changes to the interaction and system design: 
-- Instead of using a webcam to be constantly running in the background, leading to heavy computation loads and user privacy concerns ("user might feel uncomfortable and monitored with a webcam constantly running") 
+- Instead of using a webcam to be constantly running in the background, leading to heavy computation loads and user privacy concerns ("user might feel uncomfortable and monitored with a webcam constantly running"), I decided to use the buttons on the display to log the user's sitting times
+- However, this still comes with caveats that the user might notice or remember to press the button to log sitting time. I tried adding a white blinking screen as the default screen so that the user notices the device, but this felt distracting. Future design iterations could experiment with this initial interaction --how to initiate while not being too invasive or distracting.
 - Provide options to snooze the stretch reminder, in case the user is during a remote meeting or lecture. A next step or additional feature for this functionality could be to connect the device to the user's digital calenda (Google Calendar API) to automatically snooze or only give a "gentle nudge" during busy, occupied meeting times. 
-- Going beyond simple text displays, using different images to provide users with possible ideas for stretching and additional movement. 
+- Going beyond simple text displays, for example using different images to provide users with possible ideas for stretching and additional movement. 
 
 Below is a product introduction and demo video (and screenshots from the demo video):
+
 ![product_intro_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/63c6b226137032fe824c7dd5e8009d43031ae5e5/Lab%202/demo.mp4)
 
 ![demo_screenshots](https://github.com/hjkim63/Interactive-Lab-Hub/blob/35ab06f027b625ddedb4ba980e356122d22fcc01/Lab%202/demo_screenshots.png)
