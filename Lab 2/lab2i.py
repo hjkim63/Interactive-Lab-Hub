@@ -7,10 +7,16 @@ import subprocess
 
 from adafruit_rgb_display.rgb import color565
 import adafruit_rgb_display.st7789 as st7789
+
+import adafruit_rgb_display.ili9341 as ili9341
+import adafruit_rgb_display.hx8357 as hx8357  # pylint: disable=unused-import
+import adafruit_rgb_display.st7735 as st7735  # pylint: disable=unused-import
+import adafruit_rgb_display.ssd1351 as ssd1351  # pylint: disable=unused-import
+import adafruit_rgb_display.ssd1331 as ssd1331  # pylint: disable=unused-import
+
 import webcolors
 
 from PIL import Image, ImageDraw, ImageFont
-
 
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
@@ -83,7 +89,7 @@ while True:
 
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
-    greeting_1 = "Sitting down?"
+    greeting_1 = "Just sat down?"
     greeting_2 = "< Press me!"
 
     # Write four lines of text.
@@ -108,11 +114,11 @@ while True:
         stretch_time = datetime.strptime(curr_time, "%H:%M:%S") + timedelta(minutes=1)
         
         stretch_time = format(stretch_time, '%H:%M:%S')
-
-        start_1 = "It's now " + str(strftime("%H:%M:%S"))
-        start_2 = "I'll light up when"
-        start_3 = "it's time to stetch"
         stretch_ = str(stretch_time)
+
+        start_1 = "It's now " + str(strftime("%H:%M"))
+        start_3 = "at " + str(stretch_time)
+        start_2 = "Let's get moving"
 
         y = top
         draw.text((x, y), start_1, font=font, fill="#FFFFFF")
@@ -121,8 +127,6 @@ while True:
         y += font.getsize(start_2)[1]
         draw.text((x, y), start_3, font=font, fill="#0000FF")
         y += font.getsize(start_3)[1]
-        draw.text((x, y), stretch_, font=font, fill="#0000FF")
-        y += font.getsize(stretch_)[1]
 
         # Display image.
         disp.image(image, rotation)
@@ -153,7 +157,8 @@ while True:
 
             stretch_1 = "Let's stretch!"
             stretch_2 = "Busy right now?"
-            stretch_3 = "Snooze for a hot sec!"
+            stretch_3 = "Snooze a hot sec!"
+            
 
             y = top
             draw.text((x, y), stretch_1, font=font, fill="#FFFFFF")    
@@ -165,4 +170,45 @@ while True:
 
             # Display image.
             disp.image(image, rotation)
-            time.sleep(30)   
+            time.sleep(10)
+
+            
+            #displaying yoga image
+            if disp.rotation % 180 == 90:
+                height = disp.width  # we swap height/width to rotate it to landscape!
+                width = disp.height
+            else:
+                width = disp.width  # we swap height/width to rotate it to landscape!
+                height = disp.height
+            
+            image = Image.new("RGB", (width, height))
+
+            # Get drawing object to draw on image.
+            draw = ImageDraw.Draw(image)
+
+            draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+            disp.image(image)
+
+            image = Image.open("yoga_rgb.jpeg")
+            backlight = digitalio.DigitalInOut(board.D22)
+            backlight.switch_to_output()
+            backlight.value = True
+
+            # Scale the image to the smaller screen dimension
+            image_ratio = image.width / image.height
+            screen_ratio = width / height
+            if screen_ratio < image_ratio:
+                scaled_width = image.width * height // image.height
+                scaled_height = height
+            else:
+                scaled_width = width
+                scaled_height = image.height * width // image.width
+            image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+
+            # Crop and center the image
+            x = scaled_width // 2 - width // 2
+            y = scaled_height // 2 - height // 2
+            image = image.crop((x, y, x + width, y + height))
+
+            # Display image.
+            disp.image(image)
