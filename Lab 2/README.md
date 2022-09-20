@@ -213,17 +213,19 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 
 ## Part F. 
-To start with, I simply experimented using the buttons to display the current time:
 
+To start with, I simply experimented using the buttons to display the current time (code in `screen_clock.py` file):
 
 ![simple clock display](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/simple_clock_display.png)
+
 <!-- ## Make a short video of your modified barebones PiClock -->
 
 <!-- \*\*\***Take a video of your PiClock.**\*\*\* -->
 
 
 ## Part G. 
-## Below are sketches of storboards to better understand the context of the device and the user's interactions as well as additional features to build out (either within or beyond this lab).
+
+Below are sketches of storboards to better understand the context of the device and the user's interactions as well as additional features to build out (either within or beyond this lab).
 
 ![storyboard_brainstorm_a](https://github.com/hjkim63/Interactive-Lab-Hub/blob/93fba073ec64c11d02469ea91644b78b45ce32c3/Lab%202/storyboard_A.jpg)
 
@@ -231,9 +233,10 @@ To start with, I simply experimented using the buttons to display the current ti
 
 # Prep for Part 2
 
-1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
+1. Pick up remaining parts for kit on Thursday lab class. 
+<!-- 2. Check the updated  and let the TA know if there is any part missing. -->
 
-Picked up missing parts: Red LED light
+Picked up missing parts: Red LED light [parts list inventory](partslist.md)
   
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
@@ -243,7 +246,7 @@ Picked up missing parts: Red LED light
 Positives
 - Thinking about differentiated added value from alternative devices: While there are other wearable devices, like the Apple Watch, that has similar functionalities, this device would still provide some functionality without having to wear the device the entire day.
 
-Some design considereations:
+Some design considerations:
 - Edge cases & counting "sitting down time":
 - Privacy: How does the user feel about having a camera on the entire time? Where is the object detection being done?
 - Notification process: would the user be notifed using sound, display (color display or image display, text display) or other sensory alarms (vibration)? Would the user still be notifed when they are during a meeting or in a super productive work flow? What is the range of activities to take a break --stretching, walk? 
@@ -252,7 +255,7 @@ Some design considereations:
 
 # Lab 2 Part 2
 
-The updated code for Lab 2 Part 2 (`lab2i.py`) is located in the Lab 2 repo.
+The updated code for Lab 2 Part 2  is in the file `lab2i.py`.
 
 <!-- Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required. -->
 
