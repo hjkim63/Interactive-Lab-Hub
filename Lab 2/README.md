@@ -147,9 +147,10 @@ You can type the name of a color then press either of the buttons on the MiniPiT
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ cat screen_test.py
 ```
 
+
 Below is a short recording of testing the `screen_test.py` where I input a color (red) and use the button to initiate color display on the raspberry pi:
 
-![color scrren test display](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/screen_test_color.mov)
+![color_screen_test_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0f21f89561c14820b4b935dfce506496b66ae069/Lab%202/screen_test_color.mov)
 
 #### Displaying Info with Texts
 You can look in `stats.py` for how to display text on the screen!
