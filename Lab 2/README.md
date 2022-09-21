@@ -269,6 +269,8 @@ Below is a product introduction and demo video (and screenshots from the demo vi
 
 ![product_intro_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/63c6b226137032fe824c7dd5e8009d43031ae5e5/Lab%202/demo.mp4)
 
+_For purposes of testing and the demo video, the threshold for "stretching time" was only 1 minute, but in reality, would likely be 45 min - 1hr_
+
 ![demo_screenshots](https://github.com/hjkim63/Interactive-Lab-Hub/blob/35ab06f027b625ddedb4ba980e356122d22fcc01/Lab%202/demo_screenshots.png)
 <!-- As always, make sure you document contributions and ideas from others explicitly in your writeup. -->
 
