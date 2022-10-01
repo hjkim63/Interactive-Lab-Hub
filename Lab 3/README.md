@@ -127,8 +127,17 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+    - *Predict input timing* to preempt dialogue timing and code device dialogue instead of using additional signals that could add more room for error
+    - *Anticipate misunderstandings and pauses* to reduce anxiety of the user to immediately answer and provide input (for example, for more complex questions that the device wants an answer for, the device could ask the question, pause for a short time period, and then say "It's okay, take your time to give a more thoughtful answer" 
+    - *Adapt wording* to the stylistic conversation to the user (probably too complex for the scope of this lab, but important consideration for users' diverse cultural backgrounds with varied vernacular behaviors
+
+
+3. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+    - Visual interaction: some type of visual signals (lighting, text, image, etc.) to show the status and accuracy of the interaction with the device. For example, lighting to signal that the device will initiate the interaction or that it's listening to the user's speech input; text on screen to show that the device understood the user's input (rather than dialogue "I understand what you mean" or "I got it"
+    - Vibration: vibration to signal the status of the device changes, similar to how smartphones vibrate with a new message (i.e. vibrate when the device is ready to speak)
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
+    - 
 
 ## Prototype your system
 
