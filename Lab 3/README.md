@@ -101,6 +101,15 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 ### Storyboard
 
+**Context**
+From children, students, young professionals to older adults, many individuals have a multitude of tasks to complete throughout the day but often struggle to finish these tasks or finish them in the wrong order (finish the trivial, easier tasks first, but procrastinate the more important but harder tasks). People struggle to scope and prioritize their daily to-dos.  
+
+**Device & Interaction**
+This device "Focus" aims to create focus for users. The device uses dialogue to ask about a user's expected tasks and continues a dialogue to ask for the top 3 tasks, which task to start with, and how long the user expects it to take so that the device can check back to see if the task is finished.
+
+_Below is the storyboard of the use case of this device:
+
+
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
 \*\***Post your storyboard and diagram here.**\*\*
