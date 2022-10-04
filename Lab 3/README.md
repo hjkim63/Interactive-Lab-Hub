@@ -109,20 +109,32 @@ This device "Focus" aims to create focus for users. The device uses dialogue to 
 
 _Below is the storyboard of the use case of this device:
 
+![dialogue_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/37fe33f119a139ae5c8720ed1cc3dad7c7be3da2/Lab%203/focus_storyboard_1.png)
 
-Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
-\*\***Post your storyboard and diagram here.**\*\*
+<!-- Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.)  -->
 
-Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
+<!-- \*\***Post your storyboard and diagram here.**\*\* -->
+
+<!-- Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.  -->
 
 <!-- \*\***Please describe and document your process.**\*\* -->
+Below is the initial dialogue board:
+
+In the initial trial of the dialogue, I tried to anticipate time lags in the voice interaction so that the design of the dialogue could add to a more realistic conversation without the device being programmed to actually understand everyhing the user is saying. For example, I anticipated that when you first ask someone what they're going to finish, they might need a few seconds to think; I also assumed that peopple will most likely list out too many tasks they won't be able to finish so added a follow up question to "trim down" the list of tasks to top 3 priorities.
 
 ![dialogue_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/021ef687ef2e0eceb6817c17916abf2bb31502f8/Lab%203/dialogue_script_part1.png)
+
 
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
+
+Findings from the dialogue act out: 
+- Users might not any tasks to do a given day, rather than too many tasks planned. This alternative dialogue path should be added
+- Users might be confused why they're being ask this question depending on what time of day it is or what they were in the middle of doing
+- Users might want more time to work on a task when the device "checks back " on their progress. This is also an alternative dialogue path that could be added. 
+- Regarding the tone of the voice, depending on the user, they might find the tone not as encouraging to set intentions/focus for the day but rather be intimidated.
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
