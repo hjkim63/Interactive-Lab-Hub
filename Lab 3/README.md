@@ -109,7 +109,7 @@ This device "Focus" aims to create focus for users. The device uses dialogue to 
 
 _Below is the storyboard of the use case of this device:
 
-![dialogue_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/37fe33f119a139ae5c8720ed1cc3dad7c7be3da2/Lab%203/focus_storyboard_1.png)
+![storyboard_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/37fe33f119a139ae5c8720ed1cc3dad7c7be3da2/Lab%203/focus_storyboard_1.png)
 
 
 <!-- Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.)  -->
@@ -136,7 +136,12 @@ Findings from the dialogue act out:
 - Users might want more time to work on a task when the device "checks back " on their progress. This is also an alternative dialogue path that could be added. 
 - Regarding the tone of the voice, depending on the user, they might find the tone not as encouraging to set intentions/focus for the day but rather be intimidated.
 
-\*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+Suggestions and possible improvements from dialogue act out:
+- Anticipate some tasks they could do (smart recommendation or not) in the mean time if the user is unsure what to do. For example, if there is too long of a pause or the user says "I'm not sure where to start," the device could say "Not sure where to start? Here are some things you’ve been working on, or X, Y, Z outstanding tasks"
+- More input that the user can provide at the point of "task check in:" "what percentage of the task did you finish?" Depending on this input, the device could ask if the user wants to move on to another task or try to finish the incomplete task for another round of x minutes.
+
+
+<!-- \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\* -->
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
@@ -159,17 +164,30 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
     - Visual interaction: some type of visual signals (lighting, text, image, etc.) to show the status and accuracy of the interaction with the device. For example, lighting to signal that the device will initiate the interaction or that it's listening to the user's speech input; text on screen to show that the device understood the user's input (rather than dialogue "I understand what you mean" or "I got it"
     - Vibration: vibration to signal the status of the device changes, similar to how smartphones vibrate with a new message (i.e. vibrate when the device is ready to speak)
 
+
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
-    - 
+
+![storyboard_v2](https://github.com/hjkim63/Interactive-Lab-Hub/blob/37fe33f119a139ae5c8720ed1cc3dad7c7be3da2/Lab%203/focus_storyboard_1.png)
+
+
 
 ## Prototype your system
 
-The system should:
+The system includes:
+- the Raspberry Pi
+- Adafruit RGB display as the screen (visual interaction)
+- Webcam as the mic (voice intereaction)
+
+### How the system works
+- 
+
+<!-- The system should:
 * use the Raspberry Pi 
 * use one or more sensors
-* require participants to speak to it. 
+* require participants to speak to it.  -->
 
-*Document how the system works*
+<!-- *Document how the system works* -->
 
 *Include videos or screencaptures of both the system and the controller.*
 
@@ -179,18 +197,25 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+<!-- \*\**your answer here*\*\* -->
+- Initial speech of the dialogue was easy and worked well
+- Designing the timing and intonations of conversations depending on the input from the user was difficult
+- Having the different sensors line up (text on screen to line up with the speech from device) was an unexpected challenge
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+<!-- \*\**your answer here*\*\* -->
+- 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
-
+<!-- \*\**your answer here*\*\* -->
+- Various sensors can be used to understand the state of the world, so 1) choosing sensors that are less prone to errors and 2) having multiple sensors for inputing data to the device (i.e. in addition to speech to "say" a piece of information for input, having a button or keyboard, or camera) so there are alternative ways of input.
+-  
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
-
+- This system could create a rich dataset of the different tasks the users set out to do, which they perceive to be "priorities," and their behaviors around completing these tasks to possibly predict and encourage more productive and healthy task completion habits.
+- The device could make use of different sensing modalities like motion to see if and how the user is focusing on their task, and using either sound/voice or even visual (computer vision models to detect facial expressions) to understand how the user is feeling.
