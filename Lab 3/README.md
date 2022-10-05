@@ -128,16 +128,25 @@ In the initial trial of the dialogue, I tried to anticipate time lags in the voi
 
 ### Acting out the dialogue
 
-Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
+(partner: non-Cornell Tech friend)
+*Without sharing the script*, I tried out the initially design dialogue, where I acted as the device and the friend was the user. I designed the acting out exercise to that the user was looking at a smartphone screeen with a random app with a face to see how the user would reply and react to the conversation knowing they were talking to a device, rather than a person (if my physical presence was on the screen). 
 
-Findings from the dialogue act out: 
-- Users might not any tasks to do a given day, rather than too many tasks planned. This alternative dialogue path should be added
-- Users might be confused why they're being ask this question depending on what time of day it is or what they were in the middle of doing
-- Users might want more time to work on a task when the device "checks back " on their progress. This is also an alternative dialogue path that could be added. 
+Here is the recording of the interaction: ![dialogue_act_out](https://github.com/hjkim63/Interactive-Lab-Hub/blob/100082caeedd46f8426b3721bebb18ecfd05c2a0/Lab%203/dialogue_act_out.mp4)
+
+Differences: expectations vs. act out: 
+- Users might be confused and rather ask the question back when prompted with "Let's set your focus for today!" For example, the user in the act out exercise asked "what *is* my focus?," whereas I expected them to be silent and wait for the next line from the device.
+  - Users might be confused why they're being ask this question depending on what time of day it is or what they were in the middle of doing
+- When asked what their tasks for the day were, the user said something entirely vague (i.e. "doing work") rather than state too many tasks planned which was what I had initially assumed. I realized that users could not have any tasks to do a given day as well. This alternative dialogue path should be added
+- User knew that it was the end of the dialogue when the device said "I'll check back in 45 minutes," so this was a good enough signal. However, the user stated afterwards they were confused about the purpose of checking back ( "is the device checking back to see how much I finished? or ...?"
+- Users might want more time to work on a task when the device "checks back." An alternative dialogue path on checking back and a case in which the user wants to continue working on a task could be added. 
+- There was some confusion with pauses (generally 5-10 seconds in between each question)
 - Regarding the tone of the voice, depending on the user, they might find the tone not as encouraging to set intentions/focus for the day but rather be intimidated.
 
 Suggestions and possible improvements from dialogue act out:
-- Anticipate some tasks they could do (smart recommendation or not) in the mean time if the user is unsure what to do. For example, if there is too long of a pause or the user says "I'm not sure where to start," the device could say "Not sure where to start? Here are some things you’ve been working on, or X, Y, Z outstanding tasks"
+- Interaction initiation could be designed to be more smooth or personable to reduce confusion. Or I could also keep it as is because the user was quickly able to figure out from the next question what they were being asked.
+- Ask more general questions about their plan for the day and ask about tasks if they seem to be "busy."
+- Adjust pauses in between questions depending on expected answers, or add active listening cues through other sensors to show they device is listening.
+- (Could be beyond the scope of this lab) Anticipate some tasks they could do (smart recommendation or not) in the mean time if the user is unsure what to do. For example, if there is too long of a pause or the user says "I'm not sure where to start," the device could say "Not sure where to start? Here are some things you’ve been working on, or X, Y, Z outstanding tasks"
 - More input that the user can provide at the point of "task check in:" "what percentage of the task did you finish?" Depending on this input, the device could ask if the user wants to move on to another task or try to finish the incomplete task for another round of x minutes.
 
 
@@ -146,7 +155,7 @@ Suggestions and possible improvements from dialogue act out:
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
-\*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+<!-- \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\* -->
 
 # Lab 3 Part 2
 
