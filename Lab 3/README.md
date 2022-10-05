@@ -127,7 +127,10 @@ Below is the initial dialogue board:
 
 In the initial trial of the dialogue, I tried to anticipate time lags in the voice interaction so that the design of the dialogue could add to a more realistic conversation without the device being programmed to actually understand everyhing the user is saying. For example, I anticipated that when you first ask someone what they're going to finish, they might need a few seconds to think; I also assumed that peopple will most likely list out too many tasks they won't be able to finish so added a follow up question to "trim down" the list of tasks to top 3 priorities.
 
-![dialogue_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/021ef687ef2e0eceb6817c17916abf2bb31502f8/Lab%203/dialogue_script_part1.png)
+<!-- ![dialogue_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/021ef687ef2e0eceb6817c17916abf2bb31502f8/Lab%203/dialogue_script_part1.png) -->
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/021ef687ef2e0eceb6817c17916abf2bb31502f8/Lab%203/dialogue_script_part1.png" width=50% height=50%>
+
 
 
 ### Acting out the dialogue
@@ -188,28 +191,38 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 
 The system includes:
 - the Raspberry Pi
-- Adafruit RGB display as the screen (visual interaction)
+- accelerometer
 - Webcam as the mic (voice intereaction)
+- Adafruit RGB display as the screen (visual interaction --for future variations)
 
 ### How the system works
-- 
+- The speakers are costumed in a personafied box with name of the device and a facial expression.
+- The device initiates the dialogue when the device notices a vibration --signaling the user has sat down at a desk, moved around some objects, and ultimately is present in front of the device.
+- The device "speaks" to the user through the controller with pre-assumed pause intervals 
 
 <!-- The system should:
 * use the Raspberry Pi 
 * use one or more sensors
 * require participants to speak to it.  -->
+*Below are screencaptures of the system set up and device costumed:*
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/device_costume.PNG" width=50% height=50%>
 
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/system_prototype.JPG" width=50% height=50%>
+
+<!-- ![costume](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/device_costume.PNG) -->
+<!-- ![system set up](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/system_prototype.JPG) -->
 <!-- *Document how the system works* -->
 
-*Below are videos & screencaptures of the system and controller:*
-![test_1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
-![test_2](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
-![test_3](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
+*Below is a demo video and screencapture of the accelerometer data collected:* ![demo_vid](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/demo_vid.mp4)
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/demo_screen.png" width=50% height=50%>
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%203/sensor_accelormeter_data.png" width=50% height=50%>
 
 
 ## Test the system
 
-I was able to test the device interaction with two people (not from the IDD lab) and below were my reflections from testing the system.
+I was able to test the device interaction with two people (not from the IDD lab) and below were my reflections from testing the system. It was, as expected, a bit hard to hide the fact that the prototype was being wizarded, but I did not explicitly tell the test participants beforehand.
 <!-- Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.) -->
 
 <!-- Answer the following: -->
@@ -218,13 +231,13 @@ I was able to test the device interaction with two people (not from the IDD lab)
 
 <!-- \*\**your answer here*\*\* -->
 - Initial speech of the dialogue was easy and worked well
-- Designing the timing and intonations of conversations depending on the input from the user was difficult
-- Having the different sensors line up (text on screen to line up with the speech from device) was an unexpected challenge
+- Designing the timing and intonations of conversations depending on the input from the user was difficult. Especially the pre-assumed pause intervals  didn't work out so well when the use rambled or took their time to think. The user could think that the device cut them off.
 
 ### What worked well about the controller and what didn't?
 
 <!-- \*\**your answer here*\*\* -->
 - The controller wasn't as useful in controlling for pauses in between the dialogue which made it difficult for the device to carry out/lead the conversation and engage the user.
+- Having the different sensors line up (text on screen to line up with the speech from device --not documented in this report) and the accelerometer  was too sentitive that it would need to start the conversation multiple times if changes in the vigration 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
