@@ -99,15 +99,19 @@ pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $ python server.py
 ```
 From a remote browser on the same network, check to make sure your webserver is working by going to `http://<YourPiIPAddress>:5000`. You should be able to see "Hello World" on the webpage.
 
+## Device: Focus
+
 ### Storyboard
 
 **Context**
+
 From children, students, young professionals to older adults, many individuals have a multitude of tasks to complete throughout the day but often struggle to finish these tasks or finish them in the wrong order (finish the trivial, easier tasks first, but procrastinate the more important but harder tasks). People struggle to scope and prioritize their daily to-dos.  
 
 **Device & Interaction**
-This device "Focus" aims to create focus for users. The device uses dialogue to ask about a user's expected tasks and continues a dialogue to ask for the top 3 tasks, which task to start with, and how long the user expects it to take so that the device can check back to see if the task is finished.
 
-_Below is the storyboard of the use case of this device:
+This device "Focus" aims to create focus for users. The device uses dialogue to ask about a user's expected tasks and continues a dialogue to ask for the top 3 tasks, which task to start with, and how long the user expects it to take so that the device can check back to see if the task is finished. This last function is borrowed from my Lab 2 Clock of Pi project !["Bending time clock"](https://github.com/hjkim63/Interactive-Lab-Hub/blob/0fe1215f7cce4ac32dab34fbfd0b45e2433bda32/Lab%202/README.md) where the Raspberry Pi reminds the user when they should get up and stretch after sitting at their desk for extended periods of time.
+
+_Below is the storyboard of the use case of this device:_
 
 ![storyboard_v1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/37fe33f119a139ae5c8720ed1cc3dad7c7be3da2/Lab%203/focus_storyboard_1.png)
 
