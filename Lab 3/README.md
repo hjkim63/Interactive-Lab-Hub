@@ -177,8 +177,7 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
-![storyboard_v2](https://github.com/hjkim63/Interactive-Lab-Hub/blob/37fe33f119a139ae5c8720ed1cc3dad7c7be3da2/Lab%203/focus_storyboard_1.png)
-
+![storyboard_v2](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
 
 
 ## Prototype your system
@@ -198,12 +197,18 @@ The system includes:
 
 <!-- *Document how the system works* -->
 
-*Include videos or screencaptures of both the system and the controller.*
+*Below are videos & screencaptures of the system and controller:*
+![test_1](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
+![test_2](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
+![test_3](https://github.com/hjkim63/Interactive-Lab-Hub/blob/e59ec3ab93507d89720890d49d3061aa40a081f8/Lab%203/focus_storyboard_2.png)
+
 
 ## Test the system
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
-Answer the following:
+I was able to test the device interaction with two people (not from the IDD lab) and below were my reflections from testing the system.
+<!-- Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.) -->
+
+<!-- Answer the following: -->
 
 ### What worked well about the system and what didn't?
 
@@ -215,16 +220,16 @@ Answer the following:
 ### What worked well about the controller and what didn't?
 
 <!-- \*\**your answer here*\*\* -->
-- 
+- The controller wasn't as useful in controlling for pauses in between the dialogue which made it difficult for the device to carry out/lead the conversation and engage the user.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
 <!-- \*\**your answer here*\*\* -->
-- Various sensors can be used to understand the state of the world, so 1) choosing sensors that are less prone to errors and 2) having multiple sensors for inputing data to the device (i.e. in addition to speech to "say" a piece of information for input, having a button or keyboard, or camera) so there are alternative ways of input.
--  
+- Other sensors could be more effectively used to show the status of the device to the user as they would when conversing with a person. For example a blinking light could reflect "nodding" that the device is listening and understanding. 
+- Various sensors can also be used to understand the state of the world, so 1) choosing sensors that are less prone to errors and 2) having multiple sensors for inputing data to the device (i.e. in addition to speech to "say" a piece of information for input, having a button or keyboard, or camera) so there are alternative ways of input.
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+<!-- \*\**your answer here*\*\* -->
 - This system could create a rich dataset of the different tasks the users set out to do, which they perceive to be "priorities," and their behaviors around completing these tasks to possibly predict and encourage more productive and healthy task completion habits.
 - The device could make use of different sensing modalities like motion to see if and how the user is focusing on their task, and using either sound/voice or even visual (computer vision models to detect facial expressions) to understand how the user is feeling.
