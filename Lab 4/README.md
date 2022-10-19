@@ -236,7 +236,7 @@ Think about how you want to present the information about what your sensor is se
 ### Considerations & concerns of paper display prototype
  - users might be confused on how many emotions can be made into a "combination mood"
  - Users would need clear direction on what the ultimate output mood is
- - USers would need clear guidance on __how__ to input their moods (petting? pushing? how many?
+ - Users would need clear guidance on __how__ to input their moods (petting? pushing? how many?
  - Users might be curious how to undo a mood (when they are choosing a mood, they touch the color or texture button, but how would they cancel it?)
  - Users might be curious of the actual song that is playing (name, artist, how long or how many minutes are left, how loud it is and how loud it can get, etc.) rather than the text-description of their mood.
 
@@ -244,6 +244,7 @@ Think about how you want to present the information about what your sensor is se
 ### Chosen display design & rationale
 <!-- **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\*** -->
 <!-- **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?) -->
+I chose to use sketch #3 for the display and prototype design because it felt the most convenient for all the input signals to be on the same side of a six-sided device rather than try turn the device around or walk around the device if it is standing alone on a desk-like surface. I also chose the design where the display of the "mood" on the OLED display is in the middle of the "mood buttons" so it's more intuitve that it is a culmination of these different inputs. 
 
 
 
@@ -251,6 +252,7 @@ Think about how you want to present the information about what your sensor is se
 
 <!-- **\*\*\*Document your rough prototype.\*\*\*** -->
 _Inside of cardboard prototype_
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_1.JPG"  width=50% height=50% >
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_2.JPG"  width=50% height=50% >
@@ -265,7 +267,7 @@ _Outside of cardboard prototype_
 
 
 
-LAB PART 2
+# LAB PART 2
 
 ### Part 2
 
@@ -301,6 +303,15 @@ You can then call whichever control you like rather than setting a fixed value f
 We encourage you to try using these controls, **while** paying particular attention to how the interaction changes depending on the position of the controls. For example, if you have your servo rotating a screen (or a piece of cardboard) from one position to another, what changes about the interaction if the control is on the same side of the screen, or the opposite side of the screen? Trying and retrying different configurations generally helps reveal what a design choice changes about the interaction -- _make sure to document what you tried_!
 
 ### Part F Record
+
+Outline 
+* Iterations & Scoping
+* Technical prototyping
+* Physical prototype & display sketch
+* Final cardboard prototype 
+* Prototype demo & User Testing
+* Summary
+
 <!-- Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
 * "Works like": shows what the device can do
@@ -317,14 +328,14 @@ After exploration, peer disussions and technical implementation attemps, there w
 
 Due to these challenges, I ultimately decided to significantly scale down and scope the lab into the volume control feature of the overall product. This particular feature interaction would focus on volume control of the music being streamed from Spotify on another mobile device. I used the rotary encoder sensor to prototype this feature for Part 2 of this lab.
 
-### Code: 
+### Technical prototype implementation: 
 The technical implementation for this prototype is documented in this file (including referenced codebases): `encoder_volume_control.py`. I used this ![RaSpotify](https://github.com/dtcooper/raspotify) software to set up my Raspberry PI and connect to the Spotify API. 
 
 Below are pictures & demo videos of rough technical implementation: 
 <!-- **\*\*\*Document your rough prototype.\*\*\*** -->
 - _Spotify API connection (control PI audio remotely from personal Spotify account on mobile phone and desktop:_![SpotifyAPI_connect_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/spotify_connect_demo_p1.MOV)
 
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/spotify_connect_demo_p1.jpg"  width=50% height=50%/>
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/spotify_connect_demo_p1.jpg"  width=40% height=40%/>
 
 
 - _Volume control on the PI using Rotary Encoder sensor_: _![encoder_volume_control_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/encoder_volume_control_demo.mov)
@@ -334,9 +345,9 @@ Below are pictures & demo videos of rough technical implementation:
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/prototype_display_sketch(interation2).png"  width=70% height=70% >
 
-- For the volumne control implementation:
-  - users should be able to understand where the volumne is at
-  - users should be able to understand where the volumne is at
+ - users should be able to understand what the encoder is used for (incremental volumne adjustment)
+ - users should be able to understand the range of the volume (min/max) so that the encoder is used within 180 degrees (not 360) and how loud the device can be adjusted
+ - Users could be curious of the absolute volume level or whether the volume is high but the speaker itself isn't working.
 
 ### Final cardboard prototype (additional visual indications): 
 
@@ -345,12 +356,20 @@ Below are pictures & demo videos of rough technical implementation:
 Added signs to indicate where the sound was coming from on the top of the device: 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_6.JPG"  width=50% height=50% >
 
+### Prototype demo & User Testing: 
+
+* ![prototype_demo](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/prototype_demo_1.mp4) is a video recording of the prototyped demo, mainly to show technical implementation
+* ![user_test](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/user_test.mp4) is a video recording of a user test to show the interaction with the display, device and user understanding of device outputs (unfortunately due to white noise, increasing volume is hard to recognize in this recording).
+*  Some considerations that arose from the user testing were that 1) users might be confused where to start (on/off button? how do users know the device is working vs. the sound is really low?), 2) users might know which way to turn the encoder but the extent to which they can turn the knob is still unclear.
 
 ### Summary: 
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
+<!-- - "Looks like": shows how the device should look, feel, sit, weigh, etc. 
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
-
+ -->
+ - Looks like: Speaker-like, 6-sided box shaped device that can sit on a desk or flat surface. While the surface of the device is smooth, the "mood buttons" might have different textures.
+ - Works like: Ideally, the device will 1) output the user's mood depending on input of colors and textures, 2) display the mood as a word on the display, 3) stay connected to the Spotify API, 4) play music depending on the user's mood, and 5) be able to adjust the volume of this music. Currently, functions 3 & 4 are technically implemented but all are prototyped. 
+ - Acts like: The user can touch ("pet") the different colors and textures to input their mood and adjust the volumne of the music output.
 
 
 
