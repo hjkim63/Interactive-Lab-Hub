@@ -180,9 +180,8 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 <!-- **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\*** -->
 ### Considerations & concerns on physical prototype of initial ideas
 - Idea 2. Safety sensor: The physical prototype of this could be important to 1)ensure that the alert light or alarm effectively gets the attention of the user when riding the electric scooter, 2) communicate that the sensor is working versus when it actually detected something, and 3) the accuracy of the sensor performance in being able to detect moving vehicles that might be approaching very quickly, especially with the user also riding on a moving vehicle. The physical prototype should be able to function securely on a moving scooter as well as be able to be fastened on an electric scooter where it can be seen by the user.
-- Idea 3: Color lens: The "Color lens" would need particularly convenient and intuitve design that is familiar to use and not depend so much on visual signs (arrows, shapes, colors, text) since the user would not be able to usePhysical prototype of the  
-- Idea 4: 
-- 
+- Idea 3: Color lens: The "Color lens" would need particularly convenient and intuitve design that is familiar to use and not depend so much on visual signs (arrows, shapes, colors, text) since the user would not be able to read and notice visual signals. I think it would be helpful to see how users would hold this device on-the-go as they would need to put to against objects they come across, and how they understand the output. 
+- Idea 4 Mood play ("Get in touch with your emotions"): For this idea, the physical prototype would be helpful in showing how users input more ambiguous ways of showing emotion (petting? pushing a button to signal a color?). Also the prototype would help visualize how these input signals should be communicated so users can choose more than one.
 
 <!-- **\*\*\*Pick one of these designs to prototype.\*\*\*** -->
 From these various use cases, I decided to further exlpre and prototype Idea 4. 
@@ -228,21 +227,17 @@ Here is an example:
 
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
 
-### Paper display sketches 
- 
-<!-- **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\*** -->
-_Sketches of initial idea: (various touch sensors)_
-
-
-_Sketches of scoped down idea for technical implementation: (volumne control only)_
+### Information Display sketches 
+ <!-- **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\*** -->
+https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/display_sketches_png.png
 
 
 <!-- **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\*** -->
 ### Considerations & concerns of paper display prototype
-- For the "get in touch with emotions" idea:
-  - users might be confused on how many emotions can be made into a "combination mood"
-  - users might be curious how to undo a mood (when they are choosing a mood, they touch the color or texture button, but how would they cancel it?)
-  - 
+ - users might be confused on how many emotions can be made into a "combination mood"
+ - Users would need clear direction on what the ultimate output mood is
+ - USers would need clear guidance on __how__ to input their moods (petting? pushing? how many?
+ - Users might be curious how to undo a mood (when they are choosing a mood, they touch the color or texture button, but how would they cancel it?)
 
 
 ### Chosen display design & rationale
