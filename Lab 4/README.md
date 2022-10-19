@@ -175,7 +175,7 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 ### Use case sketches of sensor-integrated device interaction 
 <!-- **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\*** -->
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/021ef687ef2e0eceb6817c17916abf2bb31502f8/Lab%203/dialogue_script_part1.png" width=50% height=50%>
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/sensor_interaction_exploration.png" width=70% height=70%>
 
 <!-- **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\*** -->
 ### Considerations & concerns on physical prototype of initial ideas
