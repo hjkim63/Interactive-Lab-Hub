@@ -229,7 +229,7 @@ Think about how you want to present the information about what your sensor is se
 
 ### Information Display sketches 
  <!-- **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\*** -->
-https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/display_sketches_png.png
+ <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/display_sketches_png.png" width=70% height=70%>
 
 
 <!-- **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\*** -->
@@ -238,6 +238,7 @@ https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/display_ske
  - Users would need clear direction on what the ultimate output mood is
  - USers would need clear guidance on __how__ to input their moods (petting? pushing? how many?
  - Users might be curious how to undo a mood (when they are choosing a mood, they touch the color or texture button, but how would they cancel it?)
+ - Users might be curious of the actual song that is playing (name, artist, how long or how many minutes are left, how loud it is and how loud it can get, etc.) rather than the text-description of their mood.
 
 
 ### Chosen display design & rationale
@@ -245,10 +246,11 @@ https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/display_ske
 <!-- **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?) -->
 
 
+
 #### Build a cardbord prototype of your design.
 
 <!-- **\*\*\*Document your rough prototype.\*\*\*** -->
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
+<img src=""  width=70% height=70% >
 
 
 
@@ -320,6 +322,8 @@ Below are pictures & demo videos of rough technical implementation:
 
 
 ### Physical prototype & display: 
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/prototype_display_sketch(interation2).png"  width=70% height=70% >
 
 - For the volumne control implementation:
   - users should be able to understand where the volumne is at
