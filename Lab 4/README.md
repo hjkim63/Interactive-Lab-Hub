@@ -1,7 +1,6 @@
 # Ph-UI!!!
 
-**NAMES OF COLLABORATORS HERE**
-
+<!-- **NAMES OF COLLABORATORS HERE** -->
 
 For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
@@ -174,11 +173,21 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
-**\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+### Use case sketches of sensor-integrated device interaction 
+<!-- **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\*** -->
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/021ef687ef2e0eceb6817c17916abf2bb31502f8/Lab%203/dialogue_script_part1.png" width=50% height=50%>
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+<!-- **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\*** -->
+### Considerations & concerns on physical prototype of initial ideas
+- Idea 2. Safety sensor: The physical prototype of this could be important to 1)ensure that the alert light or alarm effectively gets the attention of the user when riding the electric scooter, 2) communicate that the sensor is working versus when it actually detected something, and 3) the accuracy of the sensor performance in being able to detect moving vehicles that might be approaching very quickly, especially with the user also riding on a moving vehicle. The physical prototype should be able to function securely on a moving scooter as well as be able to be fastened on an electric scooter where it can be seen by the user.
+- Idea 3: Color lens: The "Color lens" would need particularly convenient and intuitve design that is familiar to use and not depend so much on visual signs (arrows, shapes, colors, text) since the user would not be able to usePhysical prototype of the  
+- Idea 4: 
+- 
 
-**\*\*\*Pick one of these designs to prototype.\*\*\***
+<!-- **\*\*\*Pick one of these designs to prototype.\*\*\*** -->
+From these various use cases, I decided to further exlpre and prototype Idea 4. 
+
+
 
 
 ### Part D
@@ -218,18 +227,36 @@ Here is an example:
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
 
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
+
+### Paper display sketches 
  
-**\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+<!-- **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\*** -->
+_Sketches of initial idea: (various touch sensors)_
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-**\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+_Sketches of scoped down idea for technical implementation: (volumne control only)_
 
-**\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
-Build a cardbord prototype of your design.
+<!-- **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\*** -->
+### Considerations & concerns of paper display prototype
+- For the "get in touch with emotions" idea:
+  - users might be confused on how many emotions can be made into a "combination mood"
+  - users might be curious how to undo a mood (when they are choosing a mood, they touch the color or texture button, but how would they cancel it?)
+  - 
 
-**\*\*\*Document your rough prototype.\*\*\***
+
+### Chosen display design & rationale
+<!-- **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\*** -->
+<!-- **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?) -->
+
+
+#### Build a cardbord prototype of your design.
+
+<!-- **\*\*\*Document your rough prototype.\*\*\*** -->
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
+
+
+
 
 
 LAB PART 2
@@ -267,11 +294,47 @@ You can then call whichever control you like rather than setting a fixed value f
 
 We encourage you to try using these controls, **while** paying particular attention to how the interaction changes depending on the position of the controls. For example, if you have your servo rotating a screen (or a piece of cardboard) from one position to another, what changes about the interaction if the control is on the same side of the screen, or the opposite side of the screen? Trying and retrying different configurations generally helps reveal what a design choice changes about the interaction -- _make sure to document what you tried_!
 
-### Part F
-### Record
-
-Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
+### Part F Record
+<!-- Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
+*  -->
+
+### Iterations & Scoping:
+
+After exploration, peer disussions and technical implementation attemps, there were the following challenges in the initial idea: 
+- Conceptual: while there could be various inputs using the _capacitive sensor_, using buttons with ranging colors and texture to describe a user's mood, these colors and textures could mean vastly different things for users. If this were to become more accurate, there would have to be significant learning of 1)collecting user input data on ambiugous color/tecture input and mapping it to a mood (visualization below), and 2) mapping these moods to a song or playlist.
+- Technical: I was able to connect the Raspberry Pi to my personal Spotify account by connecting the Pi to the Spotify API. I was able to use my mobile phone to control the songs and volume remotely on the Pi, but I was not able to take input signals from the Pi to remotely control Spotify.
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/e23f1d09276d8484d9487e8bf46a079cd0a155d0/Lab%204/conceptual_challenge.png" width=60% height=60%>
+
+Due to these challenges, I ultimately decided to significantly scale down and scope the lab into the volume control feature of the overall product. This particular feature interaction would focus on volume control of the music being streamed from Spotify on another mobile device. I used the rotary encoder sensor to prototype this feature for Part 2 of this lab.
+
+### Code: 
+The technical implementation for this prototype is documented in this file (including referenced codebases): `encoder_volume_control.py`. I used this ![RaSpotify](https://github.com/dtcooper/raspotify) software to set up my Raspberry PI and connect to the Spotify API. 
+
+Below are pictures & demo videos of rough technical implementation: 
+<!-- **\*\*\*Document your rough prototype.\*\*\*** -->
+- _Spotify API connection (control PI audio remotely from personal Spotify account on mobile phone and desktop:_![SpotifyAPI_connect_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/spotify_connect_demo_p1.MOV)
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/spotify_connect_demo_p1.jpg"  width=50% height=50%/>
+
+
+- _Volume control on the PI using Rotary Encoder sensor_: _![encoder_volume_control_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/encoder_volume_control_demo.mov)
+
+
+### Physical prototype & display: 
+
+- For the volumne control implementation:
+  - users should be able to understand where the volumne is at
+
+
+### Summary: 
+* "Looks like": shows how the device should look, feel, sit, weigh, etc.
+* "Works like": shows what the device can do
+* "Acts like": shows how a person would interact with the device
+
+
+
 
