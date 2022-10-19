@@ -184,7 +184,7 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 - Idea 4 Mood play ("Get in touch with your emotions"): For this idea, the physical prototype would be helpful in showing how users input more ambiguous ways of showing emotion (petting? pushing a button to signal a color?). Also the prototype would help visualize how these input signals should be communicated so users can choose more than one.
 
 <!-- **\*\*\*Pick one of these designs to prototype.\*\*\*** -->
-From these various use cases, I decided to further exlpre and prototype Idea 4. 
+From these various use cases, I decided to further exlopre and prototype Idea 4. 
 
 
 
@@ -250,7 +250,16 @@ Think about how you want to present the information about what your sensor is se
 #### Build a cardbord prototype of your design.
 
 <!-- **\*\*\*Document your rough prototype.\*\*\*** -->
-<img src=""  width=70% height=70% >
+_Inside of cardboard prototype_
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_1.JPG"  width=50% height=50% >
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_2.JPG"  width=50% height=50% >
+
+_Outside of cardboard prototype_
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_4.JPG"  width=50% height=50% >
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_3.JPG"  width=50% height=50% >
 
 
 
@@ -321,12 +330,20 @@ Below are pictures & demo videos of rough technical implementation:
 - _Volume control on the PI using Rotary Encoder sensor_: _![encoder_volume_control_demo_video](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/encoder_volume_control_demo.mov)
 
 
-### Physical prototype & display: 
+### Physical prototype & display sketch: 
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/prototype_display_sketch(interation2).png"  width=70% height=70% >
 
 - For the volumne control implementation:
   - users should be able to understand where the volumne is at
+  - users should be able to understand where the volumne is at
+
+### Final cardboard prototype (additional visual indications): 
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_5.JPG"  width=50% height=50% >
+
+Added signs to indicate where the sound was coming from on the top of the device: 
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%204/cardboard_prototype_6.JPG"  width=50% height=50% >
 
 
 ### Summary: 
