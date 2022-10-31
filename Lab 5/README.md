@@ -102,6 +102,34 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+#### A.1 contours-detection
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_1.png"  width=50% height=50% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_2_.png"  width=50% height=50% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_3.png"  width=50% height=50% >
+
+
+#### A.2. face-detection
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/face_detection_1.png"  width=50% height=50% >
+
+
+#### A.3. flow-detection
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/opticalflow_demo_1.png"  width=50% height=50% >
+
+
+#### A.4.object-detection
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/obgdetection_demo_1.png"  width=50% height=50% >
+
+[demo_vid]!(https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/objectdetection_demo_vid.mov)
+
+Uploading objectdetection_demo_vid.mov…
+
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/objdetection_demo_2_fail.png"  width=50% height=50% >
+
+
+
+
 #### Filtering, FFTs, and Time Series data. 
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU or Microphone data stream could create a simple activity classifier between walking, running, and standing.
 
