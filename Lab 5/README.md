@@ -299,9 +299,30 @@ Idea description:
 #### B.3.Prototpying 
 
 Experimenting with different inputs and outputs: 
+- Input:
+  - Input was consistently through the webcam 
+
 - Output (interaction signal):
  - Simply bounded box
  - Display "Hey there!" or similar greeting on screen
+
+Trial 1.1 objection detection with text output dislayed on screen
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v1(obj%2C%20text).png"  width=50% height=50% >
+
+Trial 1.2 objection detection with text + image display on screen for additional interaction
+* Noted that objected detection would pick up on non-human entities, even with a threshold for bounding box and categories (picked up too many objects in the background)
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v1(obj%2C%20add%20display).png"  width=50% height=50% >
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v1(obj%2C%20too%20many%20objs).png"  width=50% height=50% >
+
+Trial 2.1. face detection with text + image output dislayed on screen
+[![demo_vid](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_vid_v2.mov)
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v2(face).png"  width=50% height=50% >
+
+
+<img src=""  width=50% height=50% >
+<img src=""  width=50% height=50% >
 
 
 ### Part C
