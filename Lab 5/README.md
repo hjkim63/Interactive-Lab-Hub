@@ -103,21 +103,33 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
 #### A.1 contours-detection
+- Benefit/key application: any application of detecting surfaces or varied sizes/area or brightness might be useful
+  - potential design: 1) detecting walls or surface areas for painting (interior design), 2) detecting changes in surface areas in medical images (disease detection)
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_1.png"  width=50% height=50% >
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_2_.png"  width=50% height=50% >
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_3.png"  width=50% height=50% >
 
 
 #### A.2. face-detection
+- Benefit/key application: applications for this algorithm could be at the individual level (detecting the face and features within) as well as scale up to detect and count many faces
+  - potential design: 1) face recognition (learned algorithm from simple face detection) for access to phone, house, etc. 2) classification of photos in photo album (automated tagging after learned model), 3) class attendance, 4) room capacity check through face detection
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/face_detection_1.png"  width=50% height=50% >
 
 
 #### A.3. flow-detection
+- Benefit/key application: key benefit of this algorithm is movement, so any application where detection of movement, speed, and direction would be useful
+  - potential design: 1) movement in cars on highway or pedestrians on walkway, 2) movement of machines/robotic devices in factory settings
+- Issue: Extremely slow latency
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/opticalflow_demo_1.png"  width=50% height=50% >
 
 
 #### A.4.object-detection
-
+- Benefit/key application: any application of detecting objects from a consistent angle would be useful
+  - potential design: 1) inventory management in warehouses or even on storefront shelves, 2) object detection for accessible tech devices, 3) detecting obstacles in walkway or autonomous vehicles (but movement might be critical here!) 
+- Issue: 
+  - overlapping objects or high quantity of objects might be more difficult to detect and discern
+  - Objects further away might not be as effective (the model on the Raspberry Pi couldn't detect objects beyond the window across the street --as seen below)
+  - Objects couldn't be accurately detected when the webcam angle was moving around quickly
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/obgdetection_demo_1.png"  width=50% height=50% >
 
 [demo_vid]!(https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/objectdetection_demo_vid.mov)
