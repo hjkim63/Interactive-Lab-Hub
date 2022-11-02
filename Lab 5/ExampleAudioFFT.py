@@ -101,6 +101,13 @@ def main():
                 print("RMS volume:",volumneSlow)
                 print("Volume Change:",volumechange)
                 
+                #added threshold detection#
+                threshold = False
+                threshold_vol = 80
+                if volumnneSlow >= threshold_vol: #set threshold
+                    threshold = True #set variable for other use once threshold is detected
+                    print("Detect volumne above threshold ",threshold_vol, "!")
+                
                 nextTimeStamp = UPDATE_INTERVAL+time.time() # See `UPDATE_INTERVAL` above
 
 
