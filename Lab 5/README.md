@@ -292,6 +292,7 @@ This might take a while to get fully installed. After installation, connect your
 #### B.2.Context Interaction Design
 
 Idea description: 
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contextual_interaction.png"  width=50% height=50% >
 
 
