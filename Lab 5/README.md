@@ -156,14 +156,14 @@ Lastly we need numpy-ringbuffer, to make continues data anlysis easier.
 
 Now try the audio processing example:
 * Find what ID the micrpohone has with `python ListAvalibleAudioDevices.py`
-    Look for a device name that includes `USB` in the name.
+    Look for a device name that includes `USB` in the name: USB Audio (hw: 1,0) 1,2
 * Adjust the variable `DEVICE_INDEX` in the `ExampleAudioFFT.py` file.
     See if you are getting results printed out from the microphone. Try to understand how the code works.
     Then run the file by typing `python ExampleAudioFFT.py`
 
 
 
-Using the microphone, try one of the following:
+Using the microphone, try one of the following: 
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
@@ -179,6 +179,22 @@ For technical references:
 
 
 **\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
+
+#### Setting a threshold
+
+To set a threshold I added the following code in the `ExampleAudioFFT.py` file:
+```
+                #added threshold detection#
+                threshold = False
+                threshold_vol = 80
+                if volumnneSlow >= threshold_vol: #set threshold
+                    threshold = True #set variable for other use once threshold is detected
+                    print("Detect volumne above threshold ",threshold_vol, "!")
+```
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/audio_threshold_setting.png"  width=50% height=50% >
+
+
 
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pi Image, so you can move onto part B.** However, you are welcome to try it on your personal computer. If this functionality is desirable for your lab or final project, we can help you get a different image running the last OS and version of python to make the following code work.
