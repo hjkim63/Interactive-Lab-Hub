@@ -301,10 +301,18 @@ Idea description:
 Experimenting with different inputs and outputs: 
 - Input:
   - Input was consistently through the webcam 
+  - Various potential inputs & design for next step interactions: 1) voice detection above a certain threshold can be used to detect whether the user sees the screen and seems to be interacting with the device (assuming they try to interact via speech rather than touching the screen), 2) Buttons for inputting the user's mood 
 
 - Output (interaction signal):
- - Simply bounded box
- - Display "Hey there!" or similar greeting on screen
+ - Simply bounded box around the face/human detected
+ - Display a greeting: "Hey there!" or similar greeting on screen
+ - Display a question: "How are you doing today?", "How's your mood today?" (and other generic questions or words of encouragement could subsequently displayed assuming/predicting possible responses from the user)
+ - Display image that could prompt a further interaction (images of moods or activities on the webcam screen that could jumpstart a conversation)
+
+##### Trial 1.  
+
+First, I assumed I could start with object detection, but this resulted in detecting all the "noise" in a given background that might not be a person. Ultimately I decided not to use object detection, but experimented with display text and images on the screen to signal interaction.
+Code for this trial: `greeting_interaction_objdetect.py`
 
 Trial 1.1 objection detection with text output dislayed on screen
 
@@ -312,10 +320,14 @@ Trial 1.1 objection detection with text output dislayed on screen
 
 Trial 1.2 objection detection with text + image display on screen for additional interaction
 * Noted that objected detection would pick up on non-human entities, even with a threshold for bounding box and categories (picked up too many objects in the background)
-* 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v1(obj%2C%20add%20display).png"  width=50% height=50% >
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v1(obj%2C%20too%20many%20objs).png"  width=50% height=50% >
+
+##### Trial 2 
+
+Next, I switched to using the openCV face detection model from Part B to focused on human detection (an employee that might be entering the building or passing a hallway). I implemented code from Trial 1 above to display 1) a bounding box around the detected face, 2) a greeting text on the webcam screen and 3) an image of varied moods to prompt an answer to the greeting shown on the webcam screen.
+Code for this trial: `greeting_interaction_facedetect.py`
 
 Trial 2.1. face detection with text + image output dislayed on screen
 
