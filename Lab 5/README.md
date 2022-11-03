@@ -105,6 +105,7 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 #### A.1 contours-detection
 - Benefit/key application: any application of detecting surfaces or varied sizes/area or brightness might be useful
   - potential design: 1) detecting walls or surface areas for painting (interior design), 2) detecting changes in surface areas in medical images (disease detection)
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_1.png"  width=50% height=50% >
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_2_.png"  width=50% height=50% >
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contour_demo_3.png"  width=50% height=50% >
@@ -113,6 +114,7 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 #### A.2. face-detection
 - Benefit/key application: applications for this algorithm could be at the individual level (detecting the face and features within) as well as scale up to detect and count many faces
   - potential design: 1) face recognition (learned algorithm from simple face detection) for access to phone, house, etc. 2) classification of photos in photo album (automated tagging after learned model), 3) class attendance, 4) room capacity check through face detection
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/face_detection_1.png"  width=50% height=50% >
 
 
@@ -120,6 +122,7 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 - Benefit/key application: key benefit of this algorithm is movement, so any application where detection of movement, speed, and direction would be useful
   - potential design: 1) movement in cars on highway or pedestrians on walkway, 2) movement of machines/robotic devices in factory settings
 - Issue: Extremely slow latency
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/opticalflow_demo_1.png"  width=50% height=50% >
 
 
@@ -130,13 +133,10 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
   - overlapping objects or high quantity of objects might be more difficult to detect and discern
   - Objects further away might not be as effective (the model on the Raspberry Pi couldn't detect objects beyond the window across the street --as seen below)
   - Objects couldn't be accurately detected when the webcam angle was moving around quickly
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/obgdetection_demo_1.png"  width=50% height=50% >
 
 [demo_vid]!(https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/objectdetection_demo_vid.mov)
 
-Uploading objectdetection_demo_vid.mov…
-
-
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/obgdetection_demo_1.png"  width=50% height=50% >
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/objdetection_demo_2_fail.png"  width=50% height=50% >
 
 
@@ -286,7 +286,7 @@ This might take a while to get fully installed. After installation, connect your
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
 #### B.1.Ideation
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/idea_brainstorming.png"  width=50% height=50% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/idea_brainstorming.png"  width=70% height=70% >
 
 
 #### B.2.Context Interaction Design
@@ -295,11 +295,11 @@ Idea description: This device would be placed at the entrance, hallway, or resti
 
 __Contextual Interaction__
 
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contextual_interaction.png"  width=50% height=50% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/contextual_interaction.png"  width=70% height=70% >
 
 __Interaction sketch__
 
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/interaction_sketch.jpg"  width=50% height=50% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/interaction_sketch.jpg"  width=70% height=70% >
 
 
 #### B.3.Prototpying 
@@ -388,19 +388,35 @@ For example:
 
 <!-- <img src=""  width=50% height=50% > -->
 
-### Part D
-### Characterize your own Observant system
+### Part D Characterize your own Observant system
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
+
 * What can you use X for?
-  * 
+  - Individualized interactive experiences for human users --the interaction could be varied but be initiated by a detected face (specific or general)
+  - For example, this could be user for interactive greetings in an elevator, library, apartment building entryway, common spaces, etc. 
+
 * What is a good environment for X?
+  - Environments where human users are not frequently appearing or noisy backgrounds so face detection is made easier
+  - Environments where it might be easier to grab the attention of users or where users have more attention to spare (entry way at office rather than busy museum). This is because the system/device would be stationary and only outputing through visual displays on the screen.
+  - Environemnts where users can put a little more effort into getting into the frame of the webcam for face detection
 * What is a bad environment for X?
-* When will X break?
-* When it breaks how will X break?
+  - Environment where there are many faces (human users) in the webcam frame at once
+  - Environment where many users might be passing by quickly (hallway, pathway)
+
+* When will X break? When it breaks how will X break?
+  - When/if there are too many faces in the frame at once
+  - When frame is changing too quickly (when testing, one user got really excited and was moving side to side to see if the webcam would detect them. this slowed down the system and eventually broke)
+  - When if breaks, the webcam screen simply closes out on the phsycaily monitor screen as of now. It would be useful for the user if the system could notify to the user that it is broken and troubleshooting is in process. Even a default image that appears when the system breaks would be a better way to end the interaction than an abrupt window closing.
+
 * What are other properties/behaviors of X?
+  - Real-time feedback is a big behavioral component of the system. Thee screen acts as the medium through which the user knows the system is working in real-time.
+  - The system could be built out to incorporate many other inputs to not only output visual interactions through the display but also converse with the use through speech or get the user's attention through sound.
+
 * How does X feel?
+  - The device might feel highly individualized and engaging because the user's face is being detected and there's an automatic output that asked for more reaction
+  - The constant display of the webcam screen, while it provides feedback, could also make users feel like they're being projected on a medium they didn't want to be or question where this footage is shared/stored.
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
