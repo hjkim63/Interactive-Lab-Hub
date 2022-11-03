@@ -346,10 +346,12 @@ Trial 2.1. face detection with text + image output dislayed on screen
 ### Part C Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
+<!-- For example: -->
+
 __screenshot from prototype test__
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/userTest_screenshot_2.png"  width=50% height=50% >
 
-For example:
 1. When does it what it is supposed to do?
    - The device successfully detects a face approaching the webcam, creates a bounding box around the approaching face, and displays the interaction
    - The interaction successfully was able to spark some notion the users that they were detected (not another object in the background) due to the bounding box around them and prompt some response because there was a quesiton (text + image) displayed once the user was detected.
