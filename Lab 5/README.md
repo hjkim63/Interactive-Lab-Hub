@@ -345,31 +345,48 @@ Trial 2.1. face detection with text + image output dislayed on screen
 
 ### Part C Test the interaction prototype
 
-![interaction_test_vid](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_vid_v2.mov)
-
 Now flight test your interactive prototype and **note down your observations**:
+__screenshot from prototype test__
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/userTest_screenshot_2.png"  width=50% height=50% >
 
 For example:
 1. When does it what it is supposed to do?
    - The device successfully detects a face approaching the webcam, creates a bounding box around the approaching face, and displays the interaction
-   - The 
+   - The interaction successfully was able to spark some notion the users that they were detected (not another object in the background) due to the bounding box around them and prompt some response because there was a quesiton (text + image) displayed once the user was detected.
  
 3. When does it fail?
    - The device is not able to accurately detect faces that 1) are further away or cannot detect their eyes, 2) are approaching from different angles or the side of their face is showing
-   - 
-   - It also fails in the face that the interaction signal (text and image displays) on the screen continues to 
+   - The interaction fails when the screen is too low or high so it is not able to detect face of users at different heights and the user needs to crowch down to get in the webcam angle.
+   - Although this wasn't in the intial interaction design, it would be a failure if we thought about how this interaction would extend further to subsequent interactions. The question text continues to display on the screen even after a user has responded (either via voice, gesture, trying to touch the webcam screen on the monitor) 
 
 5. When it fails, why does it fail?
-6. Based on the behavior you have seen, what other scenarios could cause problems?
+   - The user does not notice the device either because it is too far away or they are passing by it too quickly (but as long as they notice the screen and see themselves in it, it sparks some curiosity in the user)
+   - In this sense, there might not be enough of an output to signal to the user that they have indirectly given input into the system and prompts further interaction (possible solutions could be audio output or costuming to provide more physical presence)
+
+7. Based on the behavior you have seen, what other scenarios could cause problems?
+   - Difference in height across users and the effectiveness of the device to pick up faces of these users
+   - If multiple users come into the frame at once, each user might be confused at how to react/interact. (example scenario: if multiple employees are heading back into the office after having lunch together)
+   - If the user continues to be in the frame and are waiting for further developments in the interactions but are only met with the same initial interaction (question text + image)
+
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+   - User might not know who is prompting this interaction (i.e. "who's greeting me and asking how my day is going? Is it someone in authority? Am I being recorded?"
+   - User might not be an employee since this algorithm is simply a face detection model rather than filtering out and only detecting employee faces.
+   - User might not be detected even though they are facing toward the camera because of lack of diversity in the training input data (not detecting employees of darker skin color, less distinct facial features, hats or glasses, etc.) 
 
-<img src=""  width=50% height=50% >
-<img src=""  width=50% height=50% >
+3. How bad would they be impacted by a miss classification?
+   - There wouldn't be any severe consequences from the user (employee) by missclassification but they might feel the interaction is less inclusive or engaging, which it the opposite of the type of interaction that was intended
+
+5. How could change your interactive system to address this?
+   - The face detection algorithm would be trained on additional input data to fit the demographics of the company (using employee ID pictures or pictures some company events to crop faces and generate input data in different lighting and angles. This would address the face detection algorithm to be more inclusive
+
+7. Are there optimizations you can try to do on your sense-making algorithm.
+   - Regarding the face detection algorithm, we could create a physical space in front of the device so that it signals users to stand directly facing and closely to the device. This might enable input data to be easier to detect. 
+   - The computation energy as a whole could be optimized while working around the potential missclassification errors could be to simply change the mode of input to be audio or motion. Compared to face detection which might be more vulnerable to lighting and training data biases, voice or motion detection would be less prone to training data biases and less computation heavy.
+
+
+<!-- <img src=""  width=50% height=50% > -->
 
 ### Part D
 ### Characterize your own Observant system
@@ -377,6 +394,7 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+  * 
 * What is a good environment for X?
 * What is a bad environment for X?
 * When will X break?
@@ -390,4 +408,15 @@ During the lecture, we mentioned questions to help characterize a material:
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
-**\*\*\*Include a short video demonstrating the finished result.\*\*\***
+<!-- **\*\*\*Include a short video demonstrating the finished result.\*\*\*** -->
+![interaction_test_vid](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/user_test_vido.mp4)
+
+__screenshots from the demo video__ 
+- shows the user initially noticing device
+- User realized the device was detecting them through the appearance of the bounded box
+- User reacted through gesture (assumed user would try to touch the screen or answer via voice)
+
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/userTest_screenshot_1.png"  width=50% height=50% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/userTest_screenshot_3.png"  width=50% height=50% >
+
