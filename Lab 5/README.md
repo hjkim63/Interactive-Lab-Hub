@@ -1,6 +1,6 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
+<!-- **NAMES OF COLLABORATORS HERE** -->
 
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
@@ -342,25 +342,34 @@ Trial 2.1. face detection with text + image output dislayed on screen
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_screenshot_v2(face).png"  width=50% height=50% >
 
 
-<img src=""  width=50% height=50% >
-<img src=""  width=50% height=50% >
 
+### Part C Test the interaction prototype
 
-### Part C
-### Test the interaction prototype
+![interaction_test_vid](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/Lab%205/demo_vid_v2.mov)
 
 Now flight test your interactive prototype and **note down your observations**:
+
 For example:
 1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+   - The device successfully detects a face approaching the webcam, creates a bounding box around the approaching face, and displays the interaction
+   - The 
+ 
+3. When does it fail?
+   - The device is not able to accurately detect faces that 1) are further away or cannot detect their eyes, 2) are approaching from different angles or the side of their face is showing
+   - 
+   - It also fails in the face that the interaction signal (text and image displays) on the screen continues to 
+
+5. When it fails, why does it fail?
+6. Based on the behavior you have seen, what other scenarios could cause problems?
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
+
+<img src=""  width=50% height=50% >
+<img src=""  width=50% height=50% >
 
 ### Part D
 ### Characterize your own Observant system
