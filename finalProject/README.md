@@ -8,9 +8,14 @@
 - Wellness checking interaction
 - Forest fire detection
 
+_Sketch 1: Wellness checking interaction_
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/ideation1.jpg"  width=70% height=70% >
 
+_Sketch 2: Object finder for dementia patients_
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/ideation_2.jpg"  width=70% height=70% >
+
+_Sketch 3: Urban gardening system_
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/ideation_3.jpg"  width=70% height=70% >
 
@@ -26,11 +31,35 @@ Main features: 1) temperature, sunlight, humidity, soil moisture content monitor
 
 ### A.Design Exploration
 
+**Context/Problem:** There are numerous community gardens in urban areas for urban landscape, food access & agricultural, and educational purposes. While some gardnes are well kept by volunteers and programs, some are not and it is not always easy to tend them when there are many stakeholders leading to distributed responsibility and lack of expertise. Our device, "Pi, the Gardner" would enable easier involvement and maintenance of community gardens by giving volunteers and stakeholders a smarter signal to take care of and "interact" with the gardens when needed. This reduces the inconvenience of having to walk to the garden that might be out of the way or just even our tendencies to forget after committing to volunteering. The community garden that inspired this idea is  New York City's 91st Street Community Garden and it's volunteer group, [the Garden People](https://www.thegardenpeople.org/). Below are some images of the 91st Street Community Garden and Riverside Park Conservatory.
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/setup_environment.png"  width=80% height=80% >
+
+
+_Exploring interaction design_
+
+**Scenario:** You're an urban dweller, and you're walking down a street in your new neighborhood and come across a community garden. You like the idea of being part of something in the community and contributing and sign up to a mobile app using the QR code on the sign. You think you'll come by the garden to check on the health of the soil, water the plans and so forth, but it's harder than you expected to make the time to simply roam about to the garden without a specific goal in mind. You also realize you don't know what is good temperature for these plants, what defines the range of air humidity for plany survival, or acceptable soil moisture levels. _what if you water the garden and the excessive water ends up killing the plants?_ 
+
+A couple months in, you're feeling that signing up to volunteer was a bad idea or even worse, you've already forgotten about your prior commitment. Just then you get a notification on your mobile phone screen from __Pi, the Gardner__ telling you the soil mositure levels have been below the recommended threshold for seven consecutive days! With a clear problem to solve and direct enough solutions, you plan to walk over to the community garden with buckets of water with a friend the next day. 
+
+The next day, you water the community garden and are able to check on the Pi, the Gardner app that the soil mositure levels have returns to recommended levels. You also see that you can see how the temperature and air humidty levels of the garden have been through the days and months. You realize that with the app, you can "check in" on the garden even from a distance.
+
+
+Below are images of exploring the interaction design through a Verplank diagram and storyboards. 
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_3.jpg"  width=80% height=80% >
+
+<img src="storyboard hold"  width=80% height=80% >
+
+
+_Detailed ideation: use of sensors, types of input, etc._
+
+When further ideating, 
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_1.jpg"  width=50% height=50% >
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_2.jpg"  width=80% height=80% >
 
-<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_3.jpg"  width=80% height=80% >
 
 ### B.Technical Implementation
 
@@ -47,6 +76,13 @@ Main features: 1) temperature, sunlight, humidity, soil moisture content monitor
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/costuming.png"  width=80% height=80% >
 
+### D. Demo video
+
+https://user-images.githubusercontent.com/90526300/200396272-2d6a860d-561e-4346-ae70-e4354c99d4ff.mp4
+
+### E. Reflection
+
+Upon delving deeper into the interaction design using the diagram that there are a lot more 
 
 
 <!-- **Timeline**
