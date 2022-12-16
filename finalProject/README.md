@@ -116,7 +116,8 @@ Costumed device in community garden
 
 ### D. Demo video
 
-<!-- https://user-images.githubusercontent.com/90526300/200396272-2d6a860d-561e-4346-ae70-e4354c99d4ff.mp4 -->
+https://user-images.githubusercontent.com/89815458/208177486-0abdac1d-a52f-4382-bb64-d6c5b3dce1e3.mov
+
 
 ### E. Reflection
 
@@ -129,6 +130,8 @@ Upon delving deeper into the interaction design using the diagram that there are
 - 12/6: costumed device + demo presentation
 - 12/16: final reporting 
  -->
+
+
 
 **Risks/contingencies**
 - Wifi connections in community gardens
