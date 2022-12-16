@@ -47,7 +47,10 @@ The next day, you water the community garden and are able to check on the Pi, th
 
 Below are images of exploring the interaction design through a Verplank diagram and storyboards. 
 
+Interaction Diagram
+
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_3.jpg"  width=80% height=80% >
+
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/storyboard.jpg"  width=80% height=80% >
 
