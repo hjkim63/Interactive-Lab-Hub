@@ -1,6 +1,6 @@
 # Final Project
 
-**Sidarth Wadhwa, Heuisu Kim**
+**Heuisu Kim, Sidarth Wadhwa**
 
 ## Ideation
 - Urban gardening system (_final idea_)
@@ -27,7 +27,7 @@ An automated garden maintenance system that looks after shared community gardens
 2. providing personalized, remote care for plants
 Main features: 1) temperature, sunlight, humidity, soil moisture content monitoring and 2) remote regulation based on monitored indicators (sprinklers, etc.)
 
-## Pi, the Gardner
+## Pi, the Gardener
 
 ### A.Design Exploration
 
