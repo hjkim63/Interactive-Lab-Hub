@@ -79,12 +79,14 @@ _setup_
 https://user-images.githubusercontent.com/89815458/208196591-46710a2f-f334-4c67-b235-c21e23288434.mov
 
 _functional demonstration_
-Here we tested the soil moisture levels with something straightforward --just a glass of water -- but later tested and demonstrated with a moist banana muffin on the day of the final presentation to mimic the texture and moisture levels of soil.
+Here we tested the soil moisture levels with something straightforward--just a glass of water--but later tested and demonstrated with a moist banana muffin on the day of the final presentation to mimic the texture and moisture levels of soil.
 
 https://user-images.githubusercontent.com/89815458/208196905-f15e18db-d047-465c-ab3d-1b27ba1f0efc.mov
 
 
 _Functional check-off feedback:_ The one feedback we had during the check-in was that the sensos are operating separately so that we should have it all within one system. This was implemented for our final version of code.
+
+Furthermore, in our final version, we added in MQTT functionality and the ability to send push notifications to a user's smartphone when certain conditions arise.
 
 
 _Technical Risks/contingencies:_
@@ -97,8 +99,11 @@ _Technical Risks/contingencies:_
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/system_arch.png"  width=70% height=70% >
 
+#### B.3. Technical building process
 
-#### B.3. Output: alert signals 
+We started off by hooking the sensors up to the Pi and testing their functionality. Since this was done using a breadboard (our sensors did not have the Qwiic connectors found on the sensors that we worked with in class), we had to cross-reference pinout diagrams and iterate over the connections a few times before we were able to actually get the sensors up and running. Once we had confirmed that the sensors were up and running, we moved on to building out the application and the 
+
+#### B.4. Output: alert signals 
 
 There were two steps to the output: first detecting if we can detect when a criteria is met from the sensor input data, such as if the temperature above the garden has been above 85F or soil moisture level is below 50% for 7 consecutive days. Then we need to publish this message to observing nodes that are subscribed and sends notification to the subscribed devices. This message would be sent to anyone that had set up the "pi the gardner" mobile app.
 
