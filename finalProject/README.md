@@ -49,7 +49,7 @@ Below are images of exploring the interaction design through a Verplank diagram 
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_3.jpg"  width=80% height=80% >
 
-<img src="storyboard hold"  width=80% height=80% >
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/storyboard.jpg"  width=80% height=80% >
 
 
 _Detailed ideation: use of sensors, types of input, etc._
@@ -65,20 +65,50 @@ When further ideating,
 
 #### B.1.Input: sensors
 
+- Soil moisture sensor
+- Temperature sensor
+- Rain sensor, etc.
+
+<!-- <img src=""  width=70% height=70% > -->
+
+
+_Functional check-off feedback: 
+
+_Technical Risks/contingencies:
+- Wifi connections in community gardens
+- Diverse-background of users that are connected to this system
+- Weather conditions → plan to costume!
+- Diverse plant care needs 
+
 #### B.2.Distributed system architecture
 
 #### B.3. Output: alert signals 
 
 
+
 ### C. Costuming
+
+
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/costume_sketch.jpg"  width=80% height=80% >
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/costuming.png"  width=80% height=80% >
 
+
+<!-- <video src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/costuming.MOV"> -->
+
+
+Costumed device in community garden
+
+<img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/device_in_context.JPG"  width=40% height=40% >
+
+
+<!-- Placeholder for inside images with sensors secured inside with tape <img src=""  width=80% height=80% > -->
+
+
 ### D. Demo video
 
-https://user-images.githubusercontent.com/90526300/200396272-2d6a860d-561e-4346-ae70-e4354c99d4ff.mp4
+<!-- https://user-images.githubusercontent.com/90526300/200396272-2d6a860d-561e-4346-ae70-e4354c99d4ff.mp4 -->
 
 ### E. Reflection
 
@@ -91,10 +121,6 @@ Upon delving deeper into the interaction design using the diagram that there are
 - 12/6: costumed device + demo presentation
 - 12/16: final reporting 
  -->
-**Parts needed**
-- Soil moisture sensor
-- Temperature sensor
-- Rain sensor, etc.
 
 **Risks/contingencies**
 - Wifi connections in community gardens
