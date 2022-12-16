@@ -69,14 +69,22 @@ When further ideating,
 
 #### B.1.Input: sensors
 
+We used the following 3 sensors, and below is a functional demo video that shows our device set-up along with a demonstration. 
 - Soil moisture sensor
 - Temperature sensor
-- Rain sensor, etc.
+- Air humidity sensor
+
+_setup_
+
+https://user-images.githubusercontent.com/89815458/208196591-46710a2f-f334-4c67-b235-c21e23288434.mov
+
+_functional demonstration_
+Here we tested the soil moisture levels with something straightforward --just a glass of water -- but later tested and demonstrated with a moist banana muffin on the day of the final presentation to mimic the texture and moisture levels of soil.
+
+https://user-images.githubusercontent.com/89815458/208196905-f15e18db-d047-465c-ab3d-1b27ba1f0efc.mov
 
 
-
-
-_Functional check-off feedback:_ The one feedback we had during the check-in was that the sensos are 
+_Functional check-off feedback:_ The one feedback we had during the check-in was that the sensos are operating separately so that we should have it all within one system. This was implemented for our final version of code.
 
 
 _Technical Risks/contingencies:_
