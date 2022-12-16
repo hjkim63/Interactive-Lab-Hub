@@ -73,10 +73,11 @@ When further ideating,
 - Temperature sensor
 - Rain sensor, etc.
 
-<!-- <img src=""  width=70% height=70% > -->
 
 
-_Functional check-off feedback:_
+
+_Functional check-off feedback:_ The one feedback we had during the check-in was that the sensos are 
+
 
 _Technical Risks/contingencies:_
 - Wifi connections in community gardens
@@ -86,12 +87,19 @@ _Technical Risks/contingencies:_
 
 #### B.2.Distributed system architecture
 
-
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/system_arch.png"  width=70% height=70% >
 
 
 #### B.3. Output: alert signals 
 
+There were two steps to the output: first detecting if we can detect when a criteria is met from the sensor input data, such as if the temperature above the garden has been above 85F or soil moisture level is below 50% for 7 consecutive days. Then we need to publish this message to observing nodes that are subscribed and sends notification to the subscribed devices. This message would be sent to anyone that had set up the "pi the gardner" mobile app.
+
+To mimic this "pi the gardner" mobile app, we used the [Push Safer](https://www.pushsafer.com/) API to send out the messages to any of the garden stakeholders/volunteers.
+
+Here are the codes for connecting to the devices and sending the ping notifications:
+<!-- placeholder -->
+<!-- * [notifcation.py](https://www.pushsafer.com/)  -->
+<!-- * [Here](https://www.pushsafer.com/) -->
 
 
 ### C. Costuming
