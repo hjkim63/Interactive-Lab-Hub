@@ -101,11 +101,11 @@ _Technical Risks/contingencies:_
 
 #### B.3. Technical building process
 
-We started off by hooking the sensors up to the Pi and testing their functionality. Since this was done using a breadboard (our sensors did not have the Qwiic connectors found on the sensors that we worked with in class), we had to cross-reference pinout diagrams and iterate over the connections a few times before we were able to actually get the sensors up and running. Once we had confirmed that the sensors were up and running, we moved on to building out the application and the 
+We started off by hooking the sensors up to the Pi and testing their functionality. Since this was done using a breadboard (our sensors did not have the Qwiic connectors found on the sensors that we worked with in class), we had to cross-reference pinout diagrams and iterate over the connections a few times before we were able to actually get the sensors up and running. Once we had confirmed that the sensors were up and running, we moved on to building out the application features. We first worked on combining the two different scripts that we had for the sensors. Once that was done (and after some testing), we incorporated the MQTT and push notifiction aspects into the code in order to make our system more user friendly.
 
 #### B.4. Output: alert signals 
 
-There were two steps to the output: first detecting if we can detect when a criteria is met from the sensor input data, such as if the temperature above the garden has been above 85F or soil moisture level is below 50% for 7 consecutive days. Then we need to publish this message to observing nodes that are subscribed and sends notification to the subscribed devices. This message would be sent to anyone that had set up the "pi the gardner" mobile app.
+There were two steps to the output: first detecting if we can detect when a criteria is met from the sensor input data, such as if the temperature above the garden has been above 85F or soil moisture level is below 50% for 7 consecutive days. Then we need to publish this message to observing nodes that are subscribed and sends notification to the subscribed devices. This message would be sent to anyone that had set up the "pi the gardener" mobile app.
 
 To mimic this "pi the gardner" mobile app, we used the [Push Safer](https://www.pushsafer.com/) API to send out the messages to any of the garden stakeholders/volunteers.
 
@@ -144,6 +144,7 @@ https://user-images.githubusercontent.com/89815458/208177486-0abdac1d-a52f-4382-
 
 Upon delving deeper into the interaction design using the diagram that there are a lot more 
 
+Through this process, we also got to be intimately familiar with what goes into the process of looking after a community garden. With this, came other ideas: a webcam that can keep an eye on the garden and use computeer vision to detect pests/intrusions, an information system that describes a plant and mentions the community member responsible for it, etc. The scope to expand our project in future iterations excites us, and we look forward to the possibility of exploring futher interactions in the future.
 
 <!-- **Timeline**
 - 11/21-22: test all sensors in real environment
