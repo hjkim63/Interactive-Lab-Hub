@@ -47,11 +47,11 @@ The next day, you water the community garden and are able to check on the Pi, th
 
 Below are images of exploring the interaction design through a Verplank diagram and storyboards. 
 
-_Interaction Diagram
+_Interaction Diagram_
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/design_exploration_3.jpg"  width=80% height=80% >
 
-_Storyboard
+_Storyboard_
 
 <img src="https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/storyboard.jpg"  width=80% height=80% >
 
@@ -76,9 +76,9 @@ When further ideating,
 <!-- <img src=""  width=70% height=70% > -->
 
 
-_Functional check-off feedback: 
+_Functional check-off feedback:_
 
-_Technical Risks/contingencies:
+_Technical Risks/contingencies:_
 - Wifi connections in community gardens
 - Diverse-background of users that are connected to this system
 - Weather conditions → plan to costume!
