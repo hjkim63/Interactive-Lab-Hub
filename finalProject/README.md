@@ -138,8 +138,9 @@ https://user-images.githubusercontent.com/89815458/208177486-0abdac1d-a52f-4382-
 
 ##### Human Testing Feeddback
 
-Our users seemed to enjoy engaging with out project. People really do get excited when machines can sense things and tell them what they _feel_. 
-We were told that it would be nice if the alerts, instead of being pushed as notifications to one's phone, are instead available in a consolidated place (something like a dashboard, as we envisioned it). This concern came up because one of our users pointed out that it is usually not a do-or-die situation if their garden's soil moisture is running a little low. As a result, they may just be inclined to swipe away that information while they're going about their daily affairs. Having a centralized repository that they can check and then act on would be a second layer of failure protection that could be of use. In order to accommodate this, we decided to include MQTT functionality into our project.
+Our users seemed to enjoy engaging with out project. People really do get excited when machines can sense things and tell them what they _feel_. We also got feedback that it was nice to get some data about a garden despite being several blocks away from the community garden or it might be inconvenient to stop by. 
+
+Upon the interactions through alerts, we were told that it would be nice if the alerts, instead of being pushed as notifications to one's phone, are instead available in a consolidated place (something like a dashboard, as we envisioned it). This concern came up because one of our users pointed out that it is usually not a do-or-die situation if their garden's soil moisture is running a little low. As a result, they may just be inclined to swipe away that information while they're going about their daily affairs. Having a centralized repository that they can check and then act on would be a second layer of failure protection that could be of use. In order to accommodate this, we decided to include MQTT functionality into our project. Users also wanted more meaningful notifcations that gave direction on what to do --for example, _the notification said the garden needs watering but how much and where? Who else got the notification and would our actions be repeitive?_
 
 Another bit of feedback that we got was that the system ought to allow for value thresholds that can be localized to certain parts of the garden. This would help make it so that different plants that have varying requirements (as is to be expected, especially in a community garden) can be planted in different 'zones' within the garden where they can be adequately looked after.
 
@@ -162,9 +163,8 @@ All in all, we feel that this project idea has a lot of potential, and we enjoye
  -->
 
 
-
-**Risks/contingencies**
+<!-- **Risks/contingencies**
 - Wifi connections in community gardens
 - Diverse-background of users that are connected to this system
 - Weather conditions → plan to costume!
-- Diverse plant care needs 
+- Diverse plant care needs  -->
