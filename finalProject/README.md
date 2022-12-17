@@ -109,10 +109,7 @@ There were two steps to the output: first detecting if we can detect when a crit
 
 To mimic this "pi the gardner" mobile app, we used the [Push Safer](https://www.pushsafer.com/) API to send out the messages to any of the garden stakeholders/volunteers.
 
-Here are the codes for connecting to the devices and sending the ping notifications:
-<!-- placeholder -->
-<!-- * [notifcation.py](https://www.pushsafer.com/)  -->
-<!-- * [Here](https://www.pushsafer.com/) -->
+Here are the codes for connecting to the devices and sending the ping notifications: [soilMoist.py](https://github.com/hjkim63/Interactive-Lab-Hub/blob/Fall2022/finalProject/soilMoist.py)
 
 
 ### C. Costuming
