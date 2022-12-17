@@ -136,7 +136,7 @@ Costumed device in community garden
 
 https://user-images.githubusercontent.com/89815458/208177486-0abdac1d-a52f-4382-bb64-d6c5b3dce1e3.mov
 
-##### Human Testing Feeddback
+#### Human Testing Feedback
 
 Our users seemed to enjoy engaging with out project. People really do get excited when machines can sense things and tell them what they _feel_. We also got feedback that it was nice to get some data about a garden despite being several blocks away from the community garden or it might be inconvenient to stop by. 
 
