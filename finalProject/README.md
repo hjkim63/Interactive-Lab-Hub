@@ -139,12 +139,23 @@ Costumed device in community garden
 
 https://user-images.githubusercontent.com/89815458/208177486-0abdac1d-a52f-4382-bb64-d6c5b3dce1e3.mov
 
+##### Human Testing Feeddback
+
+Our users seemed to enjoy engaging with out project. People really do get excited when machines can sense things and tell them what they _feel_. 
+We were told that it would be nice if the alerts, instead of being pushed as notifications to one's phone, are instead available in a consolidated place (something like a dashboard, as we envisioned it). This concern came up because one of our users pointed out that it is usually not a do-or-die situation if their garden's soil moisture is running a little low. As a result, they may just be inclined to swipe away that information while they're going about their daily affairs. Having a centralized repository that they can check and then act on would be a second layer of failure protection that could be of use. In order to accommodate this, we decided to include MQTT functionality into our project.
+
+Another bit of feedback that we got was that the system ought to allow for value thresholds that can be localized to certain parts of the garden. This would help make it so that different plants that have varying requirements (as is to be expected, especially in a community garden) can be planted in different 'zones' within the garden where they can be adequately looked after.
+
 
 ### E. Reflection
 
-Upon delving deeper into the interaction design using the diagram that there are a lot more 
+Upon delving deeper into the interaction design using the diagram, we found that there was a lot of scope to delve into how we inform the user of the conditions in the garden and/or make the system act upon the same. While notifications are good, should we supplement that with actual automated responses likee watering the plants? What if a user wants to keep moisture a little lower due to expectations of rain, or for various other possible reasons?
 
 Through this process, we also got to be intimately familiar with what goes into the process of looking after a community garden. With this, came other ideas: a webcam that can keep an eye on the garden and use computeer vision to detect pests/intrusions, an information system that describes a plant and mentions the community member responsible for it, etc. The scope to expand our project in future iterations excites us, and we look forward to the possibility of exploring futher interactions in the future.
+
+We would also have been able to make good use of user interviews had we had that in our timeline at the beginning. It would have been good to find out what sort of dynamic sensor readings users felt they needed the most, and that could've shaped our choice of sensors. We would also have made the costume a little more _snazzy_ to make it as exciting as we realized it had the potential to be after seeing people's reactions to us being able to detect that a not-very-good muffin was rather moist at the presentation event. Perhaps a kitted out version of this would've been fit for Open Studio.
+
+All in all, we feel that this project idea has a lot of potential, and we enjoyed our time exploring some of that while working on it.
 
 <!-- **Timeline**
 - 11/21-22: test all sensors in real environment
